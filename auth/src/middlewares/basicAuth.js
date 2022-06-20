@@ -18,7 +18,7 @@ async function basicAuth(req,res,next){
       next();
   })
   .catch((err) => {
-      res.status(403);
+      res.status(401);
       res.send("Invalid Signin");
   })
 }
